@@ -1,0 +1,18 @@
+<h1>Games</h1>
+<% @games.each do |game| %>
+  <p>
+    <strong>GameName : </strong>
+    <%= game.name %>
+  </p>
+  <p>
+    <strong>Ratings : </strong>
+    <%= game.rating %>
+  </p>
+  <p>
+    <strong>Category : </strong>
+    <%= game.category.name %>
+  </p>
+  <p>
+    <%= link_to 'Show Details', game %>
+  </p>
+<% end %>

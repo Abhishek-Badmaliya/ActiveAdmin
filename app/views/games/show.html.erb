@@ -1,0 +1,16 @@
+<h1>Game Details</h1>
+<p>
+  <strong>GameName : </strong>
+  <%= @game.name %>
+</p>
+<p>
+  <strong>Ratings : </strong>
+  <%= @game.rating %>
+</p>
+<p>
+  <strong>Category : </strong>
+  <%= @game.category.name %>
+</p>
+<p>
+  <%= link_to 'Back', games_path %>
+</p>
