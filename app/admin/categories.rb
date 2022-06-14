@@ -16,4 +16,11 @@ ActiveAdmin.register Category do
   # end
   
   permit_params :name
+
+  form do |f|
+    f.inputs "Add Category Details" do
+      f.input :name
+    end
+    f.actions
+  end
 end
